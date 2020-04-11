@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>count</title>
+</head>
+<body>
+  <h1>여기에 글자를 쓰세요!</h1>
+  <h2>글자수 알려주기 페이지</h2>
+  <form action="{% url 'result' %}" method="POST">{% csrf_token %}
+    <textarea rows="20" cols="60" name="text"></textarea>
+    <br>
+    <input type="submit" value="단어 수 세기">
+  </form>
+</body>
+</html>
